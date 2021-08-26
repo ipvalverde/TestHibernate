@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <!-- Add database credentials here for testing -->
+        <mapping class="org.test.database.ActorEntity"/>
+        <mapping class="org.test.database.AddressEntity"/>
+        <mapping class="org.test.database.CategoryEntity"/>
+        <mapping class="org.test.database.CityEntity"/>
+        <mapping class="org.test.database.CountryEntity"/>
+        <mapping class="org.test.database.CustomerEntity"/>
+        <mapping class="org.test.database.FilmEntity"/>
+        <mapping class="org.test.database.FilmActorEntity"/>
+        <mapping class="org.test.database.FilmCategoryEntity"/>
+        <mapping class="org.test.database.InventoryEntity"/>
+        <mapping class="org.test.database.LanguageEntity"/>
+        <mapping class="org.test.database.RentalEntity"/>
+        <mapping class="org.test.database.StaffEntity"/>
+        <mapping class="org.test.database.StoreEntity"/>
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
